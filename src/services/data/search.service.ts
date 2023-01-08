@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Autocomplete, AutocompleteGetResponse } from '../domain/autocomplete';
+import { Search, SearchGetResponse } from '../domain/search';
 import { FetchHttpService } from '../infra/fetch-http.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AutocompleteService implements Autocomplete {
-  constructor(private httpService: FetchHttpService<AutocompleteGetResponse>) {}
+export class SearchService implements Search {
+  constructor(private httpService: FetchHttpService<SearchGetResponse>) {}
 
   get(query: string) {
     return this.httpService.get(
