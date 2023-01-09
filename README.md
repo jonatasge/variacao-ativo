@@ -1,6 +1,6 @@
 # Instruções para execução
 
-1. Baixar o projeto
+1. [Baixar o projeto](https://github.com/jonatasgev/variacao-ativo/archive/refs/heads/main.zip)
 2. Abria o terminal na pasta do projeto
 3. Executar o comando `npm install`
 4. Executar o comando `npm run start --open`
