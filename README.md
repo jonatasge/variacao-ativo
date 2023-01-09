@@ -1,9 +1,9 @@
 # Instruções para execução
 
-1. [Baixar o projeto](https://github.com/jonatasgev/variacao-ativo/archive/refs/heads/main.zip)
+1. [Baixar o projeto](https://github.com/jonatasgev/variacao-ativo/archive/refs/heads/main.zip) e descompactar
 2. Abria o terminal na pasta do projeto
 3. Executar o comando `npm install`
-4. Executar o comando `npm run start --open`
+4. Executar o comando `npm run start`
 5. Acessar a url [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo) e clicar no botão `"Request temporary access to the demo server"`
 
 # VariacaoAtivo
