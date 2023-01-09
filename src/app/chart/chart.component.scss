@@ -7,23 +7,33 @@
     margin-top: 0;
   }
 
-  .table-wrap {
-    margin-top: 32px;
+  .container {
+    margin: 0 -32px;
+    overflow: auto;
+    padding: 0 32px;
 
-    > mat-spinner {
-      margin: auto;
+    > canvas {
+      min-width: 450px;
     }
 
-    td:last-of-type {
-      font-weight: 900;
-    }
+    .table-wrap {
+      margin-top: 32px;
 
-    .up {
-      color: #5f5;
-    }
+      > mat-spinner {
+        margin: auto;
+      }
 
-    .down {
-      color: #f44;
+      td:last-of-type {
+        font-weight: 900;
+      }
+
+      .up {
+        color: #5f5;
+      }
+
+      .down {
+        color: #f44;
+      }
     }
   }
 }
