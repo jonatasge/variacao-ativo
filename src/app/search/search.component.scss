@@ -1,0 +1,21 @@
+#search {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+  form {
+    max-width: 500px;
+    width: 80%;
+
+    > * {
+      width: 100%;
+    }
+
+    mat-spinner {
+      margin-right: 16px;
+    }
+  }
+}

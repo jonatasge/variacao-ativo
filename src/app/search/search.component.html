@@ -1,0 +1,17 @@
+<div id="search">
+  <h1>Yahoo Finance</h1>
+
+  <form [formGroup]="formGroup">
+    <mat-form-field appearance="outline">
+      <mat-label>Buscar ativo</mat-label>
+      <input formControlName="search" type="text" placeholder="Exemplo: PETR4" matInput [matAutocomplete]="auto" />
+      <mat-spinner *ngIf="isLoading" matSuffix diameter="28"></mat-spinner>
+
+      <mat-autocomplete #auto="matAutocomplete" (optionSelected)="optionSelected($event)">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{ option }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+</div>
