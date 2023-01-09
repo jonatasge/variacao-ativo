@@ -4,15 +4,17 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChartComponent } from './chart/chart.component';
 import { SearchComponent } from './search/search.component';
 
 @NgModule({
-  declarations: [AppComponent, SearchComponent],
+  declarations: [AppComponent, ChartComponent, SearchComponent],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -22,6 +24,7 @@ import { SearchComponent } from './search/search.component';
     MatFormFieldModule,
     MatInputModule,
     MatProgressSpinnerModule,
+    MatTableModule,
     ReactiveFormsModule,
   ],
   providers: [],
