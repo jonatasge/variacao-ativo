@@ -6,11 +6,13 @@ import { FetchHttpService } from '../infra/fetch-http.service';
   providedIn: 'root',
 })
 export class SearchService implements Search {
-  constructor(private httpService: FetchHttpService<SearchGetResponse>) {}
+  constructor(private httpService: FetchHttpService) {}
 
-  get(query: string) {
-    return this.httpService.get(
-      `https://query2.finance.yahoo.com/v1/finance/search?q=${query}`
+  async get(query: string): Promise<SearchGetResponse> {
+    const response = await this.httpService.get(
+      `https://cors-anywhere.herokuapp.com/https://query2.finance.yahoo.com/v1/finance/search?q=${query}`,
+      { method: 'GET' }
     );
+    return (await response.json()) as SearchGetResponse;
   }
 }

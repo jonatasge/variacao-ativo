@@ -3,7 +3,7 @@ export interface Search {
 }
 
 export interface SearchGetResponse {
-  quotes: SearchGetResponseQuotes;
+  quotes: SearchGetResponseQuotes[];
   [key: string]: any;
 }
 

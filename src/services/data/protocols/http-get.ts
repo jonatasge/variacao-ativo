@@ -1,3 +1,3 @@
-export interface HttpGet<T> {
-  get(url: string, props?: RequestInit): Promise<T>;
+export interface HttpGet {
+  get(url: string, props?: RequestInit): Promise<Response>;
 }
