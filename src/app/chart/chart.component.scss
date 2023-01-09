@@ -8,8 +8,22 @@
   }
 
   .table-wrap {
+    margin-top: 32px;
+
     > mat-spinner {
       margin: auto;
+    }
+
+    td:last-of-type {
+      font-weight: 900;
+    }
+
+    .up {
+      color: #5f5;
+    }
+
+    .down {
+      color: #f44;
     }
   }
 }
